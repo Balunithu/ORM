@@ -3,15 +3,15 @@
 
  07/11/2023
 
-## AIM
+## AIM:
 To develop a Django application to store and retrieve data from a Football Players database using Object Relational Mapping(ORM).
 
-## Entity Relationship Diagram
+## Entity Relationship Diagram:
 
 ![output](./2.png)
 
 
-## DESIGN STEPS
+## DESIGN STEPS:
 
 ### STEP 1:
 Clone the problem from GitHub
@@ -45,9 +45,9 @@ class studentAdmin(admin.ModelAdmin):
     list_display=('name','rollno','refno','age','email')
 ```
 
-## OUTPUT
+## OUTPUT:
 ![output](./1.png)
 
 
-## RESULT
+## RESULT:
 The program  for creating student database using ORM is successful
