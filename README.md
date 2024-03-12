@@ -6,6 +6,10 @@
 ## AIM
 To develop a Django application to store and retrieve data from a Football Players database using Object Relational Mapping(ORM).
 
+## Entity Relationship Diagram
+
+![output](./2.png)
+
 
 ## DESIGN STEPS
 
@@ -23,33 +27,27 @@ Execute Django admin and create 10 Football players
 
 ## PROGRAM
 ```
-
 admin.py
-
 from django.contrib import admin
-from .models import footballplayer,footballplayerAdmin
-admin.site.register(footballplayer,footballplayerAdmin)
+from .models import student,studentAdmin
+admin.site.register(student,studentAdmin)
 
 models.py
-
 from django.db import models
 from django.contrib import admin
-class footballplayer (models.Model):
-    name=models.CharField(max_length=15)
-    weight=models.IntegerField()
+class student (models.Model):
+    name=models.CharField(max_length=20,help_text="student")
+    rollno=models.IntegerField()
+    refno=models.IntegerField()
     age=models.IntegerField()
-    members=models.CharField(max_length=20)
-    experiance=models.IntegerField()
-
-class footballplayerAdmin(admin.ModelAdmin):
-    list_display=('name','weight','age','members','experiance')
-
-
+    email=models.EmailField()
+class studentAdmin(admin.ModelAdmin):
+    list_display=('name','rollno','refno','age','email')
 ```
 
 ## OUTPUT
+![output](./1.png)
 
-![Alt text](image.png)
- 
+
 ## RESULT
-Thus the program for creating a database using ORM hass been executed successfully
+The program  for creating student database using ORM is successful
