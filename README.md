@@ -1,10 +1,7 @@
 # Ex02 Django ORM Web Application
-## Date:
-
- 07/11/2023
-
-## AIM:
-To develop a Django application to store and retrieve data from a Football Players database using Object Relational Mapping(ORM).
+## DATE:13/03/2024
+## AIM
+To develop a Django application to store and retrieve data from a Book database using Object Relational Mapping(ORM).
 
 ## Entity Relationship Diagram:
 ![alt text](<Screenshot 2024-03-19 201818.png>)
@@ -21,7 +18,7 @@ Create a new app in Django project
 Enter the code for admin.py and models.py
 
 ### STEP 4:
-Execute Django admin and create 10 Football players
+Execute Django admin and create details for 10 books
 
 ## PROGRAM
 ```
