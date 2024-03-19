@@ -7,9 +7,7 @@
 To develop a Django application to store and retrieve data from a Football Players database using Object Relational Mapping(ORM).
 
 ## Entity Relationship Diagram:
-
-![output](./2.png)
-
+![alt text](<Screenshot 2024-03-19 201818.png>)
 
 ## DESIGN STEPS:
 
@@ -46,8 +44,8 @@ class studentAdmin(admin.ModelAdmin):
 ```
 
 ## OUTPUT:
-![output](./1.png)
 
+![alt text](<Screenshot 2024-03-19 200347.png>)
 
 ## RESULT:
 The program  for creating student database using ORM is successful
