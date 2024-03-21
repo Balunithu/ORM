@@ -4,7 +4,8 @@
 To develop a Django application to store and retrieve data from a Book database using Object Relational Mapping(ORM).
 
 ## Entity Relationship Diagram:
-![alt text](<Screenshot 2024-03-19 201818.png>)
+![Screenshot 2024-03-21 083207](https://github.com/Balunithu/ORM/assets/161273477/55c78b24-596e-44e6-84db-406a4113918e)
+
 
 ## DESIGN STEPS:
 
@@ -23,26 +24,30 @@ Execute Django admin and create details for 10 books
 ## PROGRAM
 ```
 admin.py
+
 from django.contrib import admin
-from .models import student,studentAdmin
-admin.site.register(student,studentAdmin)
+from .models import Book_DB,Book_DBAdmin
+admin.site.register(Book_DB,Book_DBAdmin)
 
 models.py
+
 from django.db import models
 from django.contrib import admin
-class student (models.Model):
-    name=models.CharField(max_length=20,help_text="student")
-    rollno=models.IntegerField()
-    refno=models.IntegerField()
-    age=models.IntegerField()
-    email=models.EmailField()
-class studentAdmin(admin.ModelAdmin):
-    list_display=('name','rollno','refno','age','email')
+class Book_DB(models.Model):
+      sno=models.IntegerField(primary_key="sno")
+      name=models.CharField(max_length=50)
+      author=models.CharField(max_length=70)
+      price=models.IntegerField()
+      publisher=models.CharField(max_length=60)
+
+class Book_DBAdmin(admin.ModelAdmin):
+    list_display=("sno","name","author","price","publisher")
 ```
 
 ## OUTPUT:
 
-![alt text](<Screenshot 2024-03-19 200347.png>)
+![Screenshot 2024-03-21 083656](https://github.com/Balunithu/ORM/assets/161273477/a3f318ec-b505-42c6-b63e-97f9dd9677ba)
+
 
 ## RESULT:
 The program  for creating student database using ORM is successful
